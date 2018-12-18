@@ -1,0 +1,145 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "paw tests",
+    "version": "v0.0.0"
+  },
+  "host": "null",
+  "schemes": [
+    null
+  ],
+  "basePath": "///api/acronyms",
+  "paths": {
+    "/": {
+      "post": {
+        "summary": "Create Acronym",
+        "description": "",
+        "operationId": "4d495526-5d52-4681-a559-f88f59b236f6",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "{\"short\":\"OMG\",\"long\":\"Oh My God \"}"
+            },
+            "in": "body",
+            "name": "body"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      },
+      "get": {
+        "summary": "All Acronyms",
+        "description": "",
+        "operationId": "3f505530-553a-49b6-8dea-f1c6290441e1",
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        },
+        "parameters": []
+      }
+    },
+    "/2": {
+      "put": {
+        "summary": "Update Acronym",
+        "description": "",
+        "operationId": "de2377be-65f2-40a5-8822-68cc7d10e29a",
+        "consumes": [
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "required": false,
+            "schema": {
+              "type": "string",
+              "default": "{\"short\":\"OMG\",\"long\":\"Oh My God\"}"
+            },
+            "in": "body",
+            "name": "body"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/1": {
+      "get": {
+        "summary": "Get Acronym by ID",
+        "description": "",
+        "operationId": "f0a8111c-b6e7-4eaf-a735-46bacd0b0a4c",
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        },
+        "parameters": []
+      },
+      "delete": {
+        "summary": "Delete Acronym by ID",
+        "description": "",
+        "operationId": "3660612b-4dc2-42e9-94a6-c4b5c7295751",
+        "consumes": [
+          "application/json"
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        },
+        "parameters": []
+      }
+    },
+    "/search": {
+      "get": {
+        "summary": "Search Acronyms",
+        "description": "",
+        "operationId": "c8b5bbb8-20bd-484b-afb4-a8c1dce0c010",
+        "parameters": [
+          {
+            "type": "string",
+            "default": "Oh My God",
+            "name": "term",
+            "required": false,
+            "in": "query"
+          }
+        ],
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        }
+      }
+    },
+    "/first": {
+      "get": {
+        "summary": "First Acronym",
+        "description": "",
+        "operationId": "0b6ef7e2-f162-42f6-89b9-d0d2851d2135",
+        "responses": {
+          "default": {
+            "description": "no response description was provided for this operation"
+          }
+        },
+        "parameters": []
+      }
+    }
+  },
+  "tags": []
+}
